@@ -405,3 +405,20 @@ body {
     font-size: 24px;
     color: orange;
 }
+
+.ico i{
+    text-align: center;
+    color: orange;
+    font-size: 1.0em;
+    padding: 7px;
+    margin-left: 12px;
+    border: 1px solid orange;  
+    border-radius: 5px;
+}
+
+.ico i:hover{
+    background: orange;
+    box-shadow: orange 0px 3px 3px;
+    color: #111;
+    transform: scale(1.1);
+}
