@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 25px;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-list a:hover {
+    color: #FC0;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+    
+    .nav-list.active {
+        display: flex;
+    }
+    
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+}
+
+.welcome-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: orange 0px 5px 15px 0px;
+    border: 1px solid orange;
+}
+
+.welcome-text {
+    text-align: left;
+}
+
+.welcome-text p{
+    font-size: 1.0em;
+}
+
+.welcome-text i{
+    text-align: center;
+    color: orange;
+    font-size: 1.0em;
+    padding: 7px;
+    margin-left: 12px;
+    border: 1px solid orange;  
+    border-radius: 5px;  
+}
+
+.welcome-text i:hover{
+    background: orange;
+    box-shadow: orange 0px 3px 3px;
+    color: #111;
+    transform: scale(1.1);
+}
+
+.welcome-text h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.welcome-text em {
+    font-size: 1.8em;
+}
+
+.highlight {
+    color: orange;
+    text-shadow: #FC0 1px 0 3px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+    
+    .nav-list.active {
+        display: flex;
+    }
+    
+    .nav-list li {
+        margin: 10px 0;
+    }
+    
+    /* Responsive Welcome Section */
+    .welcome-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome-image img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .welcome-text {
+        text-align: center;
+    }
+}
+
+/* About Section */
+.about {
+    padding: 30px 10px;
+    margin-bottom: 8%;
+}
+
+.about h2{
+    font-size: 2.3em;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+.about-card {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px orange;
+    transition: transform 0.3s;
+    width: 30%;
+    min-width: 250px;
+    height: auto;
+    
+}
+
+.about-card h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: orange;
+    font-size: 1.5em;
+}
+
+.about-card p {
+    margin: 5px 0;
+}
+
+.about-card li {
+    margin: 5px 0;
+}
+
+.about-card i{
+    color: orange;
+    padding-right: 10px;
+}
+
+.about-card:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-card {
+        width: 90%;
+    }
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    margin-bottom: 8%;
+}
+
+.skills h2{
+    font-size: 2.3em;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.skill-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px orange;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 20%;
+    min-width: 220px;
+}
+
+.skill-card a {
+    text-decoration: none;
+    color: #FC0;
+}
+
+.skill-card i {
+    font-size: 50px;
+    color: orange;
+    margin-bottom: 10px;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-card {
+        width: 90%;
+    }
+}
+
+.projects {
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 8%;
+}
+
+.projects h2{
+    font-size: 2.3em;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px orange;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 40%;
+    min-width: 250px;
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card img {
+    width: 80%;
+    height: 170px;
+    border-radius: 10px;
+}
+
+.project-card i {
+    padding-right: 10px;
+    color: orange;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-card {
+        width: 90%;
+    }
+}
+
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: orange;
+}
