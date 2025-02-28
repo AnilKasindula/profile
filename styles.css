@@ -205,7 +205,7 @@ body {
 .about-container {
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
