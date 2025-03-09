@@ -6,6 +6,7 @@
     <title>Anil Kasindula</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="profile.jpg" type="image/x-icon">
 </head>
 <body>
@@ -33,48 +34,42 @@
                 <img src="profile.jpg" alt="Profile" class="profile-pic">
             </div>
             <div class="welcome-text">
-                <h1>Hi, I'm <span class="highlight">Anil Kasindula</span></h1>
+                <h1>Hi, I'm <br> <span class="highlight name-animation">Anil Kasindula</span></h1>
                 <em>Python Full Stack Developer</em>
                 <p>Seeking an entry-level IT position to apply my programming and web development skills. Eager to learn, contribute, and grow in a dynamic environment.</p>
+                
                 <div class="icons">
-                    <a href="https://www.linkedin.com/in/anil-kasindula-017b83262/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/AnilKasindula"><i class="fa-brands fa-github"></i></a>
-                    <a href="mailto:anilkasindula125@gmail.com"><i class="fa-solid fa-at"></i></a>
+                    <a href="https://www.linkedin.com/in/anil-kasindula-017b83262/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AnilKasindula" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:anilkasindula125@gmail.com">
+                        <i class="fa-solid fa-at"></i>
+                    </a>
+                    
+                    <!-- Download CV Button -->
+                    <button id="view-cv" class="cv-button"><b>Download CV</b></button>
                 </div>
-            </div>
+            </div>                
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
-       <h2>About Me</h2>
-       <div class="about-container">
-        <div class="about-card">
-            <h3><i class="fas fa-user"></i> Personal Details</h3>
-            <ul style="list-style: none;">
-                <li><i class="fas fa-id-card"></i><strong>Name:</strong> Anil Kasindula</li>
-                <li><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Hyderabad</li>
-                <li><i class="fas fa-phone"></i><strong>Phone:</strong>+91 93985 79197</li>
-                <li><i class="fas fa-envelope"></i><strong>Email:</strong> anilkasindula125@gmail.com</li>
-            </ul>
+        <h2>About Me</h2>
+        <div class="about-container">
+            <div class="about-content">
+                <p>Hi, I'm <strong>Anil Kasindula</strong>, a passionate web developer with expertise in Python, JavaScript, and Django. 
+                   I enjoy building efficient and user-friendly web applications. Currently pursuing my B.Tech in Computer Science, 
+                   I have gained hands-on experience through internships and projects.</p>
+                <a href="aboutme.html" style="text-decoration: none;"><button class="know-more">Know More →</button></a>
+            </div>
+            <div class="about-image">
+                <img src="anil.jpg" alt="Anil Kasindula">
+            </div>
         </div>
-        <div class="about-card">
-            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-            <ul>
-                <li><strong>B.Tech in Computer Science</strong><br>Sai Tirumala NVR Engineering College (2021-2025)</li>
-                <li><strong>Intermediate</strong><br>Bhavana Junior College (2019-2021)</li>
-                <li><strong>SSC</strong><br>Zilla Parishad High School (2018-2019)</li>
-            </ul>
-        </div>
-        <div class="about-card">
-            <h3><i class="fas fa-briefcase"></i> Experience</h3>
-            <ul>
-                <li>Web Development Intern - Oasis Infobyte (2 months)</li>
-                <li>Completed tasks using HTML, CSS, JavaScript</li>
-                <li>Designed and implemented responsive UI components</li>
-            </ul>
-        </div>
-       </div>
     </section>
 
      <!-- Skills Section -->
@@ -84,7 +79,7 @@
             <div class="skill-card">
                 <i class="fas fa-code"></i>
                 <h3>Front-end</h3>
-                <p>HTML, CSS, JavaScript</p>
+                <p>HTML, CSS & JavaScript</p>
                 <em><a href="https://github.com/AnilKasindula/temperature">Visit Project</a></em>
             </div>
             <div class="skill-card">
@@ -114,57 +109,129 @@
         <div class="projects-container">
             <div class="project-card">
                 <h3><i class="fas fa-seedling"></i>Fertilizers E-commerce</h3>
-                <img src="fertilisers_intro.png" alt="Fertilizers">
+                <img src="fertilisers_intro.png" alt="Fertilizers"><img src="fertilizers.png" alt="Fertilizers">
                 <p>An online platform for farmers to buy and sell fertilizers. Features include user authentication, product management, and a secure payment system.</p>
                 <a href="https://github.com/Thanujathota-tech/Fertilizers-Ecommerce" target="_blank">View Repository</a>
             </div>
             <div class="project-card">
                 <h3><i class="fas fa-stethoscope"></i>Disease Checker</h3>
-                <img src="disease.png" alt="Disease">
+                <img src="disease.png" alt="Disease"><img src="diseasecode.png" alt="Disease">
                 <p>he Disease Checker is a Tkinter-based GUI that matches user symptoms with predefined diseases. If no match is found, it advises consulting a doctor.</p>
                 <a href="https://github.com/AnilKasindula/Disease-Check" target="_blank">View Repository</a>
             </div>
             <div class="project-card">
                 <h3><i class="fas fa-thermometer-half"></i>Temperature Convertor</h3>
-                <img src="temperature.png" alt="Temperature">
+                <img src="temperature.png" alt="Temperature"><img src="tempcode.png" alt="Temperature">
                 <p>The Temperature Converter is a simple Python-based application that allows users to convert temperatures between Celsius, Fahrenheit, and Kelvin.
                      It provides an easy-to-use interface and accurate conversions, making it a useful tool for quick temperature calculations. </p>
                 <a href="https://github.com/AnilKasindula/temperature" target="_blank">View Repository</a>
+            </div>
+            <div class="project-card">
+                <h3><i class="fas fa-briefcase"></i> Portfolio</h3>
+                <img src="sampleportfolio.png" alt="Portfolio"> <img src="sampleportfoliocode.png" alt="Portfolio">
+                <p>This portfolio website has Home, Resume, Projects, and Contact sections. 
+                    It features a background image, about section, education, skills, a project showcase, and a contact form. Built with HTML, CSS, and JavaScript. </p>
+                <a href="https://github.com/AnilKasindula/OIBSIP/tree/master/Level1/Task2" target="_blank">View Repository</a>
             </div>
         </div>
     </section>
 
     <!-- Contact Me Section -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <p>Email: anilkasindula125@gmail.com</p>
+     <center>
+        <div class="container">
+            <div class="contact-info">
+                <h2>CONTACT ME</h2>
+                <p><strong>Name:</strong> Anil Kasindula</p>
+                <p><strong>Location:</strong> India</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/anil-kasindula-017b83262/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AnilKasindula" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <p>Mobile: 93985 79197</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Address: KPHB Phase-3, Hyderabad, India - 500085</p>
+            
+            <!-- Form is inside the container -->
+            <div class="form-container">
+                <form action="https://formspree.io/f/xwpvgdvd" method="POST">
+                    <h1>Send a Message</h1>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                    <p id="thank-you">Thank you! Your message has been sent.</p>
+                </form>
             </div>
         </div>
-        <div class="ico">
-            <a href="https://www.linkedin.com/in/anil-kasindula-017b83262/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/AnilKasindula"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:anilkasindula125@gmail.com"><i class="fa-solid fa-at"></i></a>
-        </div>
+        
+</center>
     </section>
     
-    <script>
+<script>
         const mobileMenu = document.getElementById('mobile-menu');
         const navList = document.querySelector('.nav-list');
         
         mobileMenu.addEventListener('click', () => {
             navList.classList.toggle('active');
         });
-    </script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+    const nameElement = document.querySelector(".name-animation");
+    const text = "Anil Kasindula";
+    let index = 0;
+
+    function animateName() {
+        nameElement.textContent = ""; // Clear previous text
+        let interval = setInterval(() => {
+            if (index < text.length) {
+                nameElement.textContent += text[index];
+                index++;
+            } else {
+                clearInterval(interval);
+                setTimeout(() => {
+                    index = 0;
+                    animateName(); // Restart animation
+                }, 1000); // Pause before restarting
+            }
+        }, 200); // Adjust speed of letter appearance
+    }
+
+    animateName(); // Start animation loop
+});
+
+const fileId = "1ZZZf5zW-RElWWZp0T1D3X6j3IBFUd0E3";
+
+document.getElementById("view-cv").addEventListener("click", () => {
+    window.open(`https://drive.google.com/file/d/${fileId}/view?usp=sharing`, "_blank");
+});
+
+
+const form = document.querySelector("form");
+const thankYouMessage = document.getElementById("thank-you");
+                        
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();  
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+        });
+        if (response.ok) {
+            form.reset();  
+            thankYouMessage.style.display = "block";  
+        } else {
+            alert("Something went wrong. Please try again.");
+        }
+    } catch (error) {
+        alert("Error sending message.");
+        }
+    });
+        
+</script>
 </body>
 </html>
