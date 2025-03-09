@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="profile.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .section {
+            flex: 1 1 calc(33.33% - 20px);
+            min-width: 280px;
+            padding: 20px;
+            border-radius: 10px;
+            background: transparent;
+            box-shadow: 0px 4px 10px rgba(255, 136, 0, 0.5);
+            float: left;
+        }
+        
+        .section strong{
+            color: orange;
+        }
+
+        h2 {
+            color: orange;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 5px;
+        }
+        h2 i{
+            margin-right: 5px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            padding: 5px 0;
+        }
+
+        .section li a i{
+            color: orange;
+            font-size: 25px;
+            float: right;
+            padding-right: 15px;
+        }
+        @media (max-width: 992px) {
+            .section {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .section {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section" id="personal-details">
+            <h2> <i class="fas fa-user"></i> Personal Details</h2>
+            <ul>
+                <li><strong>Name:</strong> Anil Kasindula</li>
+                <li><strong>Location:</strong>KPHB, Hyderabad, Telangana</li>
+            </ul>
+        </div>
+        <div class="section" id="education">
+            <h2><i class="fas fa-graduation-cap"></i>Educational Details</h2>
+            <ul>
+                <li><strong>B.Tech in Computer Science & Engineering - AI</strong> <br>Jawaharlal Nehru Technological University Kakinada Affiliated (2021-2025)</li>
+                <li><strong>Intermediate:</strong> Bhavana Junior College (2019-2021)</li>
+                <li><strong>SSC:</strong> Zilla Parishad High School (2018-2019)</li>
+            </ul>
+        </div>
+        <div class="section" id="projects">
+            <h2> <i class="fas fa-code"></i> Projects</h2>
+            <ul>
+                <li>Fertilizers E-commerce Website
+                    <a href="https://github.com/Thanujathota-tech/Fertilizers-Ecommerce" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/posts/anil-kasindula-017b83262_webdevelopment-ecommerce-teamwork-activity-7299422108873342976-uUiN/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECaAFMB0WZhgwjRTzeKHFxrtLGBZ7Mxa5A" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>Disease Checker
+                    <a href="https://github.com/AnilKasindula/Disease-Check" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/posts/anil-kasindula-017b83262_pythonprogramming-pythoncoding-gui-activity-7156540734949494784-rIDJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECaAFMB0WZhgwjRTzeKHFxrtLGBZ7Mxa5A" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>Temperature Converter
+                    <a href="https://github.com/AnilKasindula/temperature" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/posts/anil-kasindula-017b83262_oasisinfobyte-webdevelopment-internship2023-activity-7079333445822210048-aMlP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECaAFMB0WZhgwjRTzeKHFxrtLGBZ7Mxa5A" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>Portfolio
+                    <a href="https://github.com/AnilKasindula/OIBSIP/tree/master/Level1/Task2" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/posts/anil-kasindula-017b83262_oasisinfobyte-webdevelopment-internship2023-activity-7079332092228071424-rUYN?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECaAFMB0WZhgwjRTzeKHFxrtLGBZ7Mxa5A" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>ATM Simulation
+                    <a href="https://github.com/AnilKasindula/ATM_Simulation" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/posts/anil-kasindula-017b83262_pythondevelopment-atmservices-octanet-activity-7214988212572733440-MYze?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECaAFMB0WZhgwjRTzeKHFxrtLGBZ7Mxa5A" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="section" id="internships">
+            <h2> <i class="fas fa-briefcase"></i> Internships</h2>
+            <ul>
+                <li>Python Internship - Octanet
+                    <a href="https://www.linkedin.com/posts/anil-kasindula-017b83262_offer-letter-from-octanet-activity-7205046227262918656-ZIaM?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECaAFMB0WZhgwjRTzeKHFxrtLGBZ7Mxa5A" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>Web Development Intern - Oasis Infobyte 
+                    <a href="https://www.linkedin.com/posts/anil-kasindula-017b83262_oasis-infobyte-internship-offer-letter-activity-7069860534971502593-GObl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECaAFMB0WZhgwjRTzeKHFxrtLGBZ7Mxa5A" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>Python programming Internship - YBI Foundation 
+                    <a href="https://www.linkedin.com/posts/anil-kasindula-017b83262_ybi-foundation-python-activity-7223722556862742528-PkW9?utm_source=share&utm_medium=member_desktop&rcm=ACoAAECaAFMB0WZhgwjRTzeKHFxrtLGBZ7Mxa5A" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="section" id="skills">
+            <h2><i class="fas fa-tools"></i>Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML & CSS</li>
+                <li>Django</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+        <div class="section" id="hobbies">
+            <h2> <i class="fas fa-gamepad"></i> Hobbies</h2>
+            <ul>
+                <li>Reading Tech Blogs</li>
+                <li>Cooking</li>
+                <li>Gaming</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
